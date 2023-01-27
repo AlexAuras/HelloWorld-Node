@@ -19,6 +19,19 @@ nvs use lts
 
 # Initialize Node project
 npm init -y
+
+# Add TypeScript
+npm i -D typescript
+npm i -D @types/node
+
+# Compile TypeScript to JavaScript (without tsconfig.json)
+npx tsc .\example1.ts .\example2.ts --outDir ./out/
+
+# Add the tscconfig.json
+tsc --init
+
+# Build
+npm run-script build
 ```
 
 ## Remarks
