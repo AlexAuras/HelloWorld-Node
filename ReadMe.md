@@ -32,9 +32,14 @@ tsc --init
 
 # Build
 npm run-script build
+
+# Run with Node
+node .\out\example1.js
+node .\out\example2.js
 ```
 
 ## Remarks
 
 - The .ignore file is copied from: https://github.com/github/gitignore/blob/main/Node.gitignore
+- I deleted the "main" entry from package.json as in my case I only have individuel example.js files. However, in most cases you would have one index.js file that you start your app from. 
 - At the end I added some gimmicks I learned from [How to Setup Node.js with TypeScript in 2023](https://www.youtube.com/watch?v=H91aqUHn8sE)
